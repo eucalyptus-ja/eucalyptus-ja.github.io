@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-08-12T20:21:06+09:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[Eucalyptus Users Group Japan]]></title>
+  <link href="http://eucalyptus-ja.github.io/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2014-08-12T21:11:52+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Osamu Habuka]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Eucalyptus 6th Birthday Party in Japan]]></title>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/08/12/eucalyptus-6th-birthday-party-in-japan/"/>
+    <updated>2014-08-12T21:07:24+09:00</updated>
+    <id>http://eucalyptus-ja.github.io/blog/2014/08/12/eucalyptus-6th-birthday-party-in-japan</id>
+    <content type="html"><![CDATA[<p>去る 2014/05/30 に Eucalyptus の6歳の誕生日パーティを開催致しました。</p>
+]]></content>
+  </entry>
   
 </feed>
