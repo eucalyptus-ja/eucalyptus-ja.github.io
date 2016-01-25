@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: news | Eucalyptus Users Group Japan]]></title>
+  <link href="http://eucalyptus-users.jp/blog/categories/news/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-users.jp/"/>
+  <updated>2015-12-02T20:44:20+09:00</updated>
+  <id>http://eucalyptus-users.jp/</id>
+  <author>
+    <name><![CDATA[eucalyptusja]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Japan Eucalyptus Advent Calendar 2015]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
+    <updated>2015-11-10T00:50:26+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
+    <content type="html"><![CDATA[<p>今年も Japan Eucalyptus Advent Calendar 2015 を以下に開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
+
+<ul>
+<li><a href="http://www.adventar.org/calendars/752">(1枚目) Japan Eucalyptus Advent Calendar 2015</a></li>
+<li><a href="http://www.adventar.org/calendars/815">(2枚目) Japan Eucalyptus Advent Calendar 2015</a></li>
+</ul>
+
+
+<p>なお、状況に応じて随時ここで告知を更新していきます。</p>
+
+<ul>
+<li>(2015/11/20 追記) もしご要望ありましたら、参加賞代わりに小さなユーカリの鉢植えを進呈致しますので、<a href="https://twitter.com/eucalyptusja">@eucalypusja</a> まで個別に連絡ください。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いています]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/"/>
+    <updated>2014-12-01T08:00:09+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud</id>
+    <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> 1日目の投稿です。</p>
+
+<p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
+
+<p>当ユーザ会は発足してからこれまで、ML や公式サイトの運営の殆どを前佛氏に頼っておりました。もちろんこれからも氏の協力なくしては運営が成り立たないのですが、例えば公式サイトを稼動させるサーバなどは他者の助力を得ることはできないものか？と常々考えておりました。</p>
+
+<!-- more -->
+
+
+<p>そうしたところ、日本 hp の真壁氏より hp Helion Public Cloud で当ユーザ会の公式サイトを稼動させることを提案頂き、当ユーザ会はこれを辞退する理由がないため有り難くこれを受けることにしました。そしてここに当ユーザ会の公式サイトが hp Helion Public Cloud で動いていることを発表致します。</p>
+
+<p>今年の 9/11 に hp 社が Eucalptus 社を買収することを発表し、ある意味ではソフトウェアとしての Eucalyptus は hp 社の庇護のもと発展していくと言えるのではないかと思いますが、日本 Eucalyptus ユーザ会も hp 社の厚意によって発展していきたいと思います。改めて、この提案をして頂いた真壁氏とこの提案を実現して頂いた hp 社には感謝を申し上げます。</p>
+
+<p>最後に、これまで長い間尽力して頂いた前佛氏に深く感謝致します。氏にはこれからも当ユーザ会の発起人および最古のメンバーとして関って頂けると幸いに存じます。</p>
+
+<p>2014/12/01
+日本 Eucalyptus ユーザ会 メンバー全員より</p>
+
+<hr />
+
+<p>明日の <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> は、<a href="https://twitter.com/giraffeforestg">@giraffeforestg</a> さんです。楽しみです。ヽʕ♡˙ᴥ˙♡ʔノ</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Eucalyptus Advent Calendar 2014]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
+    <updated>2014-11-19T02:29:54+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
+    <content type="html"><![CDATA[<p>今年も <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> を開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HP 社が Eucalyptus 社を買収しました]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus/"/>
+    <updated>2014-09-12T02:24:36+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus</id>
+    <content type="html"><![CDATA[<p><a href="https://www.eucalyptus.com/news/hp-acquires-eucalyptus-accelerate-hybrid-cloud-adoption-enterprise">HP 社が Eucalyptus 社を買収した</a>そうです。おめでとうございます。</p>
+
+<p>今後ソフトウェアの Eucalyptus がどのようになるかについては当ユーザ会は知りませんが、今まで通り活動していきたいと存じます。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JEUG's mascot]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot/"/>
+    <updated>2012-07-25T19:34:36+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot</id>
+    <content type="html"><![CDATA[<p>those koala and bird are mascot of JEUG.</p>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center;"> </th>
+<th style="text-align:center;"> </th>
+<th style="text-align:center;"> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><img src="/images/IMG_0308.jpg" width="150" height="200"></td>
+<td style="text-align:center;"><img src="/images/puta_pc.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="/images/puta_su.002.png" width="200" height="198"></td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="/images/puta_su.004.png" width="200" height="198"></td>
+<td style="text-align:center;"><img src="/images/puta_su_mole.dig_.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="/images/puta_su_storage.001.png" width="200" height="168"></td>
+</tr>
+</tbody>
+</table>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Wakame-VDC on Eucalyptus - Eucalyptus Users Group Japan</title>
+  <meta name="author" content="eucalyptusja">
+
+  
+  <meta name="description" content="Wakame ユーザの皆さんこんにちは、日本 Eucalyptus ユーザ会です。これは「Wakame-vdc / OpenVNet Advent Calendar 2014」の17日目のエントリです。 ちなみに昨日は @hansode さんのエントリ「#WakameVdc / #OpenVNet &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Eucalyptus Users Group Japan" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:eucalyptus-users.jp" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <!-- li><img src="/images/jeug-logo.02.png"/ width="35" height="35"><a class="navbar-brand" href="/"></a></li -->
+    <li><a href="/">
+        <span class="blue_light">
+            Eucalyptus Users Group Japan
+        </span>
+       
+           <span class="blue_dark">
+             Official Site
+           </span>
+       
+    </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Wakame-VDC on Eucalyptus</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-17T00:26:53+09:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Wakame ユーザの皆さんこんにちは、日本 Eucalyptus ユーザ会です。これは「<a href="http://www.adventar.org/calendars/577">Wakame-vdc / OpenVNet Advent Calendar 2014</a>」の17日目のエントリです。</p>
+
+<p>ちなみに昨日は <a href="https://twitter.com/hansode">@hansode</a> さんのエントリ「<a href="http://blog.hansode.org/archives/52680175.html">#WakameVdc / #OpenVNet 開発環境の改善履歴</a>」でした。@hansode さんのエントリを読んでると自分も同じような環境を作りたくなってウズウズしてくるので、皆さんも是非読んでみてください。</p>
+
+<p>ところで、OpenStack に関わる人は OpenStacker、CloudStack に関わる人は CloudStacker、Eucalyptus に関わる人は Eucalyptoid という名称があるのですが、Wakame-VDC / OpenVNet の場合は何て呼ぶんでしょうか？ Wakamen? OpenVNetian? 知りたいものです。</p>
+
+<!-- more -->
+
+
+<p>さて、本題に入りましょう。今日はタイトルにもあるように、Eucalyptus のインスタンス上で Wakame-VDC を動かすという試みです。<a href="http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/">12/03 のエントリ</a> や <a href="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/">12/10 のエントリ</a> と同様に、KVM の Guest VM 上で動いている Eucalyptus 環境のインスタンス上で構築します。ですので、Wakame-VDC は Guest VM ではなく Nested VM で動くため、使用するのはハイパーバイザではなくコンテナを選ぶことになります。(Nested VM の上にさらに VM を起動するのは無理という話らしいので…)</p>
+
+<p>で、使用した Eucalyptus のマシンイメージは Eucalyptus 本家が配布している CentOS 6.5 のマシンイメージを使用します。</p>
+
+<p><img src="/images/wakame.adventcalendar.2014.1217-01.png"></p>
+
+<p>こんな感じで起動したインスタンスに接続し、Wakame-VDC をインストールするために必要なリポジトリ情報を登録して必要なパッケージ類をインストールします。</p>
+
+<pre><code>sudo curl -o /etc/yum.repos.d/wakame-vdc.repo -R https://raw.githubusercontent.com/axsh/wakame-vdc/master/rpmbuild/wakame-vdc.repo
+sudo yum install -y wakame-vdc-dcmgr-vmapp-config
+sudo yum install -y wakame-vdc-hva-lxc-vmapp-config
+sudo yum install -y wakame-vdc-webui-vmapp-config
+</code></pre>
+
+<p>次に Wakame-VDC のセットアップスクリプトをダウンロードし、OpenVZ に関する記述を lxc に変更します。</p>
+
+<pre><code>wget "https://raw.githubusercontent.com/axsh/wakame-vdc/master/scripts/install_guide_demo_data.sh"
+sed -i -e 's/openvz/lxc/' install_guide_demo_data.sh
+</code></pre>
+
+<p>次に、VM のネットワーク設定を変更し、eth0 を br0 にぶら下げます。設定の内容は以下のような感じです。</p>
+
+<pre><code># cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+DEVICE="eth0"
+ONBOOT="yes"
+BRIDGE="br0"
+NM_CONTROLLED="no"
+
+# cat /etc/sysconfig/network-scripts/ifcfg-br0 
+DEVICE="br0"
+BOOTPROTO="dhcp"
+IPV6INIT="yes"
+NM_CONTROLLED="no"
+ONBOOT="yes"
+TYPE="Bridge"
+</code></pre>
+
+<p>そして、ダウンロードしたセットアップスクリプトを実行します。</p>
+
+<pre><code>chmod +x install_guide_demo_data.sh 
+NETWORK='10.0.0.0' PREFIX='8' DHCP_RANGE_START='10.0.0.100' DHCP_RANGE_END='10.0.0.200' ./install_guide_demo_data.sh
+sudo service rabbitmq-server start
+</code></pre>
+
+<p>最後に Wakame-VDC の各種サービスを起動します。</p>
+
+<pre><code>sudo start vdc-dcmgr
+sudo start vdc-collector
+sudo start vdc-hva
+sudo start vdc-webui
+</code></pre>
+
+<p>で、インスタンスの 9000 番ポートに接続します。</p>
+
+<p><img src="/images/wakame.adventcalendar.2014.1217-02.png"></p>
+
+<p>おぉっ！エクセレンッ！！！</p>
+
+<p>では、あっさりと動いた Wakame-VDC に敬意を表してインスタンスを起動してみます。</p>
+
+<p><img src="/images/wakame.adventcalendar.2014.1217-03.png"></p>
+
+<p>よしきた terminated。見事にインスタンス起動失敗。そーこなくちゃ。</p>
+
+<p>第一、OpenStack, CloudStack と失敗しているのに、Wakame-VDC だけ成功しちゃぁ、やれインチキだのやれエコヒイキだのいわれかねません。いやいや、そんなことないんですよ？ただ Eucalyptus や Wakame-VDC がちょっとばかり「簡単に構築できすぎちゃう」だけなんですけどね？(釣り針</p>
+
+<p>ということで、まぁ、結果的には今回も失敗です。ちなみに vdc-hva のログには以下のようなエラーが出ていました。</p>
+
+<pre><code>2014-12-16 14:55:25 JobContext thr=LocalStore[1/2] [INFO]: Job complete c6297697cd662fff0ee78a34a80ee2aefa309368 (Local ID: 6d2780f60c6fb7ce4cae1d6f6482f9d5f3fc99ba)[ run_local_store ]: 9.391360679 sec
+2014-12-16 14:55:25 JobContext thr=JobWorker[0/1] [INFO]: Job start c6297697cd662fff0ee78a34a80ee2aefa309368 (Local ID: e27a7bdf0e2d9c2fafb7001a6786e46e9ad9d4a2)[ run_local_store ]
+I, [2014-12-16T14:55:25.315100 #13376]  INFO -- HvaHandler: Session ID: c6297697cd662fff0ee78a34a80ee2aefa309368: Instance UUID: i-lg8xxzce: Booting instance
+2014-12-16 14:55:31 JobContext thr=JobWorker[0/1] [ERROR]: Job failed c6297697cd662fff0ee78a34a80ee2aefa309368 [ run_local_store ]: No such file or directory - lxc-version
+2014-12-16 14:55:31 JobContext thr=JobWorker[0/1] [ERROR]: Caught Errno::ENOENT: No such file or directory - lxc-version
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/drivers/hypervisor/linux_hypervisor/linux_container/lxc.rb:50:in ``'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/drivers/hypervisor/linux_hypervisor/linux_container/lxc.rb:50:in `initialize'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/drivers/hypervisor/linux_hypervisor/linux_container/lxc.rb:162:in `new'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/drivers/hypervisor/linux_hypervisor/linux_container/lxc.rb:162:in `block in &lt;class:Lxc&gt;'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/task.rb:95:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/task.rb:95:in `new_task_class'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/task.rb:243:in `invoke'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/rpc/hva_handler.rb:212:in `setup_metadata_drive'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/rpc/hva_handler.rb:319:in `block in &lt;class:HvaHandler&gt;'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/runner/rpc_server.rb:69:in `instance_eval'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/runner/rpc_server.rb:69:in `block in job'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/proc.rb:25:in `instance_eval'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/proc.rb:25:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/map.rb:52:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/map.rb:52:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/builder.rb:36:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/rack/job.rb:59:in `block (2 levels) in call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/node_modules/job_worker.rb:67:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/node_modules/job_worker.rb:67:in `block in start'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/thread_pool.rb:32:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/thread_pool.rb:32:in `block (2 levels) in initialize'
+I, [2014-12-16T14:55:31.785715 #13376]  INFO -- HvaHandler: Session ID: c6297697cd662fff0ee78a34a80ee2aefa309368: Instance UUID: i-lg8xxzce: teminating instance
+E, [2014-12-16T14:55:31.811701 #13376] ERROR -- HvaHandler: Session ID: c6297697cd662fff0ee78a34a80ee2aefa309368: Instance UUID: i-lg8xxzce: Ignoring error: Errno::ENOENT No such file or directory - lxc-version from /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/drivers/hypervisor/linux_hypervisor/linux_container/lxc.rb:50:in ``'
+I, [2014-12-16T14:55:31.833609 #13376]  INFO -- LinuxLocalStore: Session ID: c6297697cd662fff0ee78a34a80ee2aefa309368: Executing command: rm '/var/lib/wakame-vdc/instances/i-lg8xxzce/vol-ya4ijon8'
+D, [2014-12-16T14:55:31.919764 #13376] DEBUG -- LinuxLocalStore: Session ID: c6297697cd662fff0ee78a34a80ee2aefa309368: Command Result: success (exit code=0) Command PID: 13555
+D, [2014-12-16T14:55:31.955083 #13376] DEBUG -- ServiceNetfilter: event caught: hva.demo1/vnic_destroyed: vif-0na1mbvw
+D, [2014-12-16T14:55:31.955609 #13376] DEBUG -- ServiceNetfilter: vnic not found in cache: vif-0na1mbvw
+2014-12-16 15:13:16 ThreadPool thr=InstanceMonitor[0/1] [ERROR]: Caught RuntimeError: response was received already.
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/node_modules/rpc_channel.rb:450:in `wait'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/node_modules/rpc_channel.rb:153:in `request'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/node_modules/instance_monitor.rb:31:in `check_instance'
+        /opt/axsh/wakame-vdc/dcmgr/lib/dcmgr/node_modules/instance_monitor.rb:12:in `block (3 levels) in &lt;class:InstanceMonitor&gt;'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/thread_pool.rb:32:in `call'
+        /opt/axsh/wakame-vdc/dcmgr/vendor/bundle/ruby/2.0.0/gems/isono-0.2.19/lib/isono/thread_pool.rb:32:in `block (2 levels) in initialize'
+</code></pre>
+
+<hr />
+
+<p>さて、明日のエントリは @shida1234 さんの「<a href="http://www.adventar.org/calendars/577">Wakame LiveDVDを体育座りで待つ話</a>」です。お楽しみに。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">eucalyptusja</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-17T00:26:53+09:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/adventcalendar/'>adventcalendar</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus/" data-via="eucalyptusja" data-counturl="http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/10/cloudstack-advent-calendar-10th/" title="Previous Post: CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目">&laquo; CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/12/23/eucalyptus-on-eucalyptus/" title="Next Post: Eucalyptus on Eucalyptus">Eucalyptus on Eucalyptus &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <p align="center"><img src="/images/jeug-logo2.200x200.png"/></p>
+  <h1>Eucalyptusとは</h1>
+  <p>
+Eucalyptus は、オープンソース・ソフトウェアによるクラスタリング環境を用いた、可用性のあるユーリティ・コンピューティングのアーキテクチャ、いわゆる “クラウド・コンピューティング” を実用化するためのシステムです。オープンソースなので、誰でも自由に使うことができます。
+  </p>
+  <h1>Eucalyptus Users Group Japanとは</h1>
+  <p>
+日本における Eucalyptus に関するコミュニティ活動を行ない、Eucalyptus の利用者互助を目的としたユーザ会です。
+  </p>
+</section>
+<section>
+  <h1>Twitter Timeline</h1>
+  <p><a class="twitter-timeline"  href="https://twitter.com/eucalyptusja" data-widget-id="536682478677676032" data-chrome="noheader nofooter transparent" lang="ja">@eucalyptusjaさんのツイート</a></p>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/">本家コミュニティの開発に参加するには？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/">日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いていました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/">Japan Eucalyptus Advent Calendar 2015</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/23/eucalyptus-on-eucalyptus/">Eucalyptus on Eucalyptus</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/17/wakame-vdc-on-eucalyptus/">Wakame-VDC on Eucalyptus</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - eucalyptusja -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>OpenStack on Eucalyptus / OpenStack Advent Calendar 2014 3日目 - Eucalyptus Users Group Japan</title>
+  <meta name="author" content="eucalyptusja">
+
+  
+  <meta name="description" content="OpenStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。 これは OpenStack Advent Calendar 2014 の3日目のエントリです。昨日は @coprolite さんのエントリ「初めてのOpenStack」というエントリでした。正直、 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Eucalyptus Users Group Japan" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:eucalyptus-users.jp" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <!-- li><img src="/images/jeug-logo.02.png"/ width="35" height="35"><a class="navbar-brand" href="/"></a></li -->
+    <li><a href="/">
+        <span class="blue_light">
+            Eucalyptus Users Group Japan
+        </span>
+       
+           <span class="blue_dark">
+             Official Site
+           </span>
+       
+    </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">OpenStack on Eucalyptus / OpenStack Advent Calendar 2014 3日目</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-03T08:56:45+09:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>OpenStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
+
+<p>これは OpenStack Advent Calendar 2014 の3日目のエントリです。昨日は @coprolite さんのエントリ「<a href="http://isana.me/?p=1641">初めてのOpenStack</a>」というエントリでした。正直、初めてのかたでも気軽に参加してくれる OpenStack Advent Calendar が羨ましいです。もちろん当ユーザ会が主催する <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> も初めてのかた大歓迎です。そして当ユーザ会が他のユーザ会の Advent Calendar に参加するという試みも初めてです。うん、初々しいですね。</p>
+
+<!-- more -->
+
+
+<p>で、今日は Eucalyptus のインスタンスに OpenStack 環境を作ってみようという話です。</p>
+
+<p>と言っても「OpenStack on Eucalyptus」というネタは何ら新しい試みではなく、過去にも「<a href="http://book.impress.co.jp/books/3025">Eucalyptusではじめるプライベートクラウド構築</a>」の著者である志田氏が国立情報学研究所にて「<a href="http://stream.edubase.jp/contents/view/537#">edubase Cloudで学ぶクラウド入門 ～OpenStackを作ってみよう～その1</a>」という講義の中で OpenStack on Eucalyptus をやっています。</p>
+
+<p>とは言え、あれから Eucalyptus も OpenStack も歳を重ねましたので、ついでに御互いを重ねてもいいじゃないかという意味不明な理由と、あとは 2012 年の Eucalyptus Advent Calendar 2012 JP に @irix_jp さんが投稿してくださった「<a href="http://www.slideshare.net/irix_jp/eucalyptus-on-openstack">オプスタでもユーカリしたい</a>」に対するアンサー投稿として書きます。</p>
+
+<p>あ、ちなみにこのエントリをアシストしてくださる「ぷた」と「す～」にお越し頂きました。</p>
+
+<p>どうぞ！一言挨拶を！</p>
+
+<p>……。</p>
+
+<p>え？あぁ、はい、「キャラ設定も何もないのに、挨拶なんてできない」って？なるほどなるほど。わかりました、では先に進めましょう。</p>
+
+<p>ということで、早速 Eucalyptus の上に OpenStack を乗せてみました。(ドヤァ</p>
+
+<p><img src="/images/openstack.adventcalendar.2014.1203-01.jpg"></p>
+
+<p>…すみません、ぷたさんから「そんな OpenStacker を怒らせるようなネタするな」ってツッコまれました。ちゃんとやります。</p>
+
+<p>まずは土台になる Eucalyptus 環境ですが、<a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> の2日目の @giraffeforestg さんのエントリ「<a href="http://giraffeforestg.blog.fc2.com/blog-entry-187.html">Eucalyptus 4 を 楽しんでみる</a> を参考にして構築しましたので、Eucalyptus の環境作りはそちらを参照してください。:)</p>
+
+<p>で、この上に Ubuntu のインスタンスを起動させます。ちなみに Ubuntu のマシンイメージは <a href="http://emis.eucalyptus.com/">Eucalyptus の公式マシンイメージ</a> から取得しました。</p>
+
+<p>で、取得した圧縮イメージを以下のように解凍して Eucalyptus に登録します。</p>
+
+<pre><code>unxz ubuntu.raw.xz 
+# source eucarc 
+# euca-install-image -b ubuntu-12.04.4 -r x86_64 -i ubuntu.raw -n ubuntu-12.04.4 --virtualization-type hvm
+</code></pre>
+
+<p>起動したインスタンスに接続し、devstack を取得します。</p>
+
+<p>ちなみに、本当ならインスタンスのネットワーク設定を変更して DHCP から Statick な設定にしたい気持ちでたっぷりなんですが、それをやると今度は Eucalyptus のネットワークコンポーネントがインスタンスのために iptables で張った設定と異ってしまうため、DHCP で IP を取得する設定のまま進めています。</p>
+
+<pre><code># apt-get install git
+# git clone https://git.openstack.org/openstack-dev/devstack
+# cd devstack
+# git checkout stable/juno
+</code></pre>
+
+<p>そして <a href="https://gist.github.com/amotoki/b5ca4affd768177ed911">元木さん謹製の local.conf</a> を流用して環境を作ります。</p>
+
+<pre><code># wget https://gist.githubusercontent.com/amotoki/b5ca4affd768177ed911/raw/ab186a67b50279acf9f63849e5a6b74ae104663c/local.conf
+(ちょいちょいと local.conf を適宜変更し、stack.sh を実行ます)
+# ./stack.sh 
+You are running this script as root.
+Cut it out.
+Really.
+If you need an account to run DevStack, do this (as root, heh) to create a non-root account:
+/root/devstack/tools/create-stack-user.sh
+</code></pre>
+
+<p>おっと、root ユーザで叩いたら怒られましたので、非 root ユーザを作って実行します。</p>
+
+<pre><code># /root/devstack/tools/create-stack-user.sh
+Creating a group called stack
+Creating a user called stack
+Giving stack user passwordless sudo privileges
+# mv devstack /opt/stack/
+# chown stack. -R /opt/stack/devstack
+# su - stack
+$ cd devstack/
+$ ./stack.sh 
+</code></pre>
+
+<p>すると&hellip;今回のこの環境は Linux Mint 上の KVM ゲストに Eucalyptus 環境を作成し、そのインスタンス上で devstack を動かすという状況なのですが、さすがに nested vm 上での devstack は余程パワーのあるマシンでもない限りなかなか処理が終わらないようです…orz</p>
+
+<p>ということで、既に 12/04 00:00 を過ぎてしまいましたが、今後 devstack の進捗があればまた更新させて頂きます。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">eucalyptusja</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-03T08:56:45+09:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/adventcalendar/'>adventcalendar</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/" data-via="eucalyptusja" data-counturl="http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/" title="Previous Post: 日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いています">&laquo; 日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いています</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/12/10/cloudstack-advent-calendar-10th/" title="Next Post: CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目">CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <p align="center"><img src="/images/jeug-logo2.200x200.png"/></p>
+  <h1>Eucalyptusとは</h1>
+  <p>
+Eucalyptus は、オープンソース・ソフトウェアによるクラスタリング環境を用いた、可用性のあるユーリティ・コンピューティングのアーキテクチャ、いわゆる “クラウド・コンピューティング” を実用化するためのシステムです。オープンソースなので、誰でも自由に使うことができます。
+  </p>
+  <h1>Eucalyptus Users Group Japanとは</h1>
+  <p>
+日本における Eucalyptus に関するコミュニティ活動を行ない、Eucalyptus の利用者互助を目的としたユーザ会です。
+  </p>
+</section>
+<section>
+  <h1>Twitter Timeline</h1>
+  <p><a class="twitter-timeline"  href="https://twitter.com/eucalyptusja" data-widget-id="536682478677676032" data-chrome="noheader nofooter transparent" lang="ja">@eucalyptusjaさんのツイート</a></p>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/">本家コミュニティの開発に参加するには？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/">日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いていました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/">Japan Eucalyptus Advent Calendar 2015</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/23/eucalyptus-on-eucalyptus/">Eucalyptus on Eucalyptus</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/17/wakame-vdc-on-eucalyptus/">Wakame-VDC on Eucalyptus</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - eucalyptusja -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

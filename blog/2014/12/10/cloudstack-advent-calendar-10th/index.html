@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目 - Eucalyptus Users Group Japan</title>
+  <meta name="author" content="eucalyptusja">
+
+  
+  <meta name="description" content="CloudStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。 これは CloudStack Advent Calendar 2014 の10日目のエントリです。 昨日は林さんの「データから読むCloudStack -CloudStack Advent Calendar &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Eucalyptus Users Group Japan" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:eucalyptus-users.jp" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <!-- li><img src="/images/jeug-logo.02.png"/ width="35" height="35"><a class="navbar-brand" href="/"></a></li -->
+    <li><a href="/">
+        <span class="blue_light">
+            Eucalyptus Users Group Japan
+        </span>
+       
+           <span class="blue_dark">
+             Official Site
+           </span>
+       
+    </a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-10T01:56:58+09:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>CloudStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
+
+<p>これは CloudStack Advent Calendar 2014 の10日目のエントリです。</p>
+
+<p>昨日は林さんの「<a href="http://blogs.itmedia.co.jp/business20/2014/12/cloudstack.html">データから読むCloudStack -CloudStack Advent Calendar 2014-</a>」という投稿でしたが、まぁ当ユーザ会が宣伝するまでもなく林さんのエントリは皆さんお読みでしょうから、さくっと進めたいと思います。はいそこ「妬んでるぅ」とか余計なこと言わなくていいですよ。身の程をわきまえていると言ってください。</p>
+
+<!-- more -->
+
+
+<p>さて、今回も当ユーザ会のマスコットである「ぷた」と「す〜」にアシスタントしてもらいますが、彼らとの絡みは無いかもしれません。</p>
+
+<p>ということで、早速 Eucalyptus の上に CloudStack を乗せてみました。(ドヤァ</p>
+
+<p><img src="/images/cloudstack.advent.calendar.2014.1210-01.jpg"></p>
+
+<p>…すみません、ぷたさんから「そのネタ、誰も笑ってないよ」って冷静に言われちゃいました。あと、す〜さんからも「大削会長の本を前編しか買ってないのバレるよ？」って…。本当にごめんなさい。</p>
+
+<h3>しょうがないからインスタンス上で入れてみる</h3>
+
+<p>参考にしたのは<a href="http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/latest/qig.html">この Quick Installation Guide for CentOS</a> です。</p>
+
+<p>ごにょごにょと環境整備をし、おもむろに</p>
+
+<pre><code># yum -y install cloudstack-management
+</code></pre>
+
+<p>って実行したんですが、</p>
+
+<pre><code>cloudstack/filelists                                                                              | 107 kB     00:00     
+http://cloudstack.apt-get.eu/rhel/4.4/repodata/filelists.xml.gz: [Errno -1] Metadata file does not match checksum
+Trying other mirror.
+Error: failure: repodata/filelists.xml.gz from cloudstack: [Errno 256] No more mirrors to try.
+ You could try using --skip-broken to work around the problem
+ You could try running: rpm -Va --nofiles --nodigest
+</code></pre>
+
+<p>ほっほ〜、これが CloudStack のやり方ですか…なかなかやりますね。仕方ありませんね、ここで諦めたら何を言われるかわかりませんので、悪足掻きをしますよ。</p>
+
+<p>リポジトリをよく見ると、12/10 に 4.4.2 のパッケージが追加されているじゃないですか？きっとコイツのせいでメタデータファイルが腐ってるんだろう？と思い、とりあえず 4.4.1 を指定してインストールしてみようと…</p>
+
+<pre><code># yum -y install cloudstack-management-4.4.1-NONOSS_3.el6
+cloudstack/filelists                                                                              | 107 kB     00:04     
+http://cloudstack.apt-get.eu/rhel/4.4/repodata/filelists.xml.gz: [Errno -1] Metadata file does not match checksum
+Trying other mirror.
+Error: failure: repodata/filelists.xml.gz from cloudstack: [Errno 256] No more mirrors to try.
+</code></pre>
+
+<p>ふーん、「Eucalyptoid ごときにインストールできるものは無ぇ」と、そーいうことでしょうか？なるほど、なるほど。</p>
+
+<p>というのは冗談で、repomd.xml 内の値が間違ってるということなのですが、</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>  <span class="nt">&lt;data</span> <span class="na">type=</span><span class="s">&quot;filelists&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;location</span> <span class="na">xml:base=</span><span class="s">&quot;http://cloudstack.apt-get.eu/rhel/4.4&quot;</span> <span class="na">href=</span><span class="s">&quot;repodata/filelists.xml.gz&quot;</span><span class="nt">/&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;checksum</span> <span class="na">type=</span><span class="s">&quot;sha&quot;</span><span class="nt">&gt;</span>b7a511b59dad16233d1a4ed3450702f80fec87dc<span class="nt">&lt;/checksum&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;timestamp&gt;</span>1418215917<span class="nt">&lt;/timestamp&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;open-checksum</span> <span class="na">type=</span><span class="s">&quot;sha&quot;</span><span class="nt">&gt;</span>1cee3b59a6434efd2a978a05fa69ab3517df25e1<span class="nt">&lt;/open-checksum&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/data&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>に対して実ファイルはと言うと…</p>
+
+<pre><code># sha1sum filelists.xml.gz 
+b7a511b59dad16233d1a4ed3450702f80fec87dc  filelists.xml.gz
+</code></pre>
+
+<p>うーん？何も間違っていないような気がするんだけど…</p>
+
+<p>ハイ！、yum clean all しろっていう話でした。ほんと初歩的なことすぎて辛い…今頃全 CloudStacker が「m9(^Д^) プギャー」って言ってるのが目に浮びます。ほんと勘弁してくらさい。ローカルにミラーを作り始めた当ユーザ会の純真な心を温めてください。</p>
+
+<p>ってことで続けます。</p>
+
+<pre><code># cloudstack-setup-databases cloud:password@localhost --deploy-as=root
+Mysql user name:cloud                                                           [ OK ]
+Mysql user password:******                                                      [ OK ]
+Mysql server ip:localhost                                                       [ OK ]
+Mysql server port:3306                                                          [ OK ]
+Mysql root user name:root                                                       [ OK ]
+Mysql root user password:******                                                 [ OK ]
+Checking Cloud database files ...                                               [ OK ]
+Checking local machine hostname ...                                             
+
+We apologize for below error:
+***************************************************************
+The host name of this computer does not resolve to an IP address.
+Please use your operating system's network setup tools to fix this ('hostname --fqdn' hostname: 不明なホスト
+).
+
+***************************************************************
+Please run:
+
+    cloud-setup-database -h
+
+for full help
+</code></pre>
+
+<p>おやまぁ、一難去ってまた一難です。そーいや、hostname -f の結果をちゃんと確認してない。これはまさしく、できない子がよくやるパターンのひとつ「ドキュメントを読み飛ばす」をやりました。なので、ちゃんと hostname -f の結果が返るようにし、cloud-setup-database -h を叩きます。</p>
+
+<pre><code># cloud-setup-database -h
+-bash: cloud-setup-database: コマンドが見つかりません
+</code></pre>
+
+<p>もーいや、要らない、そーゆー小ネタ要らない。</p>
+
+<pre><code># cloudstack-setup-databases cloud:password@localhost --deploy-as=root
+Mysql user name:cloud                                                           [ OK ]
+Mysql user password:******                                                      [ OK ]
+Mysql server ip:localhost                                                       [ OK ]
+Mysql server port:3306                                                          [ OK ]
+Mysql root user name:root                                                       [ OK ]
+Mysql root user password:******                                                 [ OK ]
+Checking Cloud database files ...                                               [ OK ]
+Checking local machine hostname ...                                             [ OK ]
+Checking SELinux setup ...                                                      [ OK ]
+Detected local IP address as 192.168.122.248, will use as cluster management server node IP[ OK ]
+Preparing /etc/cloudstack/management/db.properties                              [ OK ]
+Applying /usr/share/cloudstack-management/setup/create-database.sql             [ OK ]
+Applying /usr/share/cloudstack-management/setup/create-schema.sql               [ OK ]
+Applying /usr/share/cloudstack-management/setup/create-database-premium.sql     [ OK ]
+Applying /usr/share/cloudstack-management/setup/create-schema-premium.sql       [ OK ]
+Applying /usr/share/cloudstack-management/setup/server-setup.sql                [ OK ]
+Applying /usr/share/cloudstack-management/setup/templates.sql                   [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_db.sql                  [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_schema.sql              [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_multipart.sql           [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_index.sql               [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_multipart_alter.sql     [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_bucketpolicy.sql        [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_policy_alter.sql        [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_offering.sql            [ OK ]
+Applying /usr/share/cloudstack-bridge/setup/cloudbridge_offering_alter.sql      [ OK ]
+Processing encryption ...                                                       [ OK ]
+Finalizing setup ...                                                            [ OK ]
+
+CloudStack has successfully initialized database, you can check your database configuration in /etc/cloudstack/management/db.properties
+</code></pre>
+
+<p>今度はうまく行ったようです。</p>
+
+<p>が、ここでタイムアップです。12/10 24:00 になりそうです。当ユーザ会は CloudStack on Eucalyptus に継続して挑戦していきたいと思いますので、この続きの結果が出ましたら当エントリを更新したいと考えております。</p>
+
+<hr />
+
+<p>明日のエントリは @opt_Hohenheim さんの「heat on cloudstack」です。なんか当ユーザ会以上にチャレンジングですね。楽しみです。では。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">eucalyptusja</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-10T01:56:58+09:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/adventcalendar/'>adventcalendar</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/" data-via="eucalyptusja" data-counturl="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/" title="Previous Post: OpenStack on Eucalyptus / OpenStack Advent Calendar 2014 3日目">&laquo; OpenStack on Eucalyptus / OpenStack Advent Calendar 2014 3日目</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/12/17/wakame-vdc-on-eucalyptus/" title="Next Post: Wakame-VDC on Eucalyptus">Wakame-VDC on Eucalyptus &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <p align="center"><img src="/images/jeug-logo2.200x200.png"/></p>
+  <h1>Eucalyptusとは</h1>
+  <p>
+Eucalyptus は、オープンソース・ソフトウェアによるクラスタリング環境を用いた、可用性のあるユーリティ・コンピューティングのアーキテクチャ、いわゆる “クラウド・コンピューティング” を実用化するためのシステムです。オープンソースなので、誰でも自由に使うことができます。
+  </p>
+  <h1>Eucalyptus Users Group Japanとは</h1>
+  <p>
+日本における Eucalyptus に関するコミュニティ活動を行ない、Eucalyptus の利用者互助を目的としたユーザ会です。
+  </p>
+</section>
+<section>
+  <h1>Twitter Timeline</h1>
+  <p><a class="twitter-timeline"  href="https://twitter.com/eucalyptusja" data-widget-id="536682478677676032" data-chrome="noheader nofooter transparent" lang="ja">@eucalyptusjaさんのツイート</a></p>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/">本家コミュニティの開発に参加するには？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/">日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いていました</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/">Japan Eucalyptus Advent Calendar 2015</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/23/eucalyptus-on-eucalyptus/">Eucalyptus on Eucalyptus</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/17/wakame-vdc-on-eucalyptus/">Wakame-VDC on Eucalyptus</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - eucalyptusja -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

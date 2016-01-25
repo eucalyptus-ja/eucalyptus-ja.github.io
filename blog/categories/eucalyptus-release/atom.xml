@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: eucalyptus release | Eucalyptus Users Group Japan]]></title>
+  <link href="http://eucalyptus-users.jp/blog/categories/eucalyptus-release/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-users.jp/"/>
+  <updated>2015-12-02T20:44:20+09:00</updated>
+  <id>http://eucalyptus-users.jp/</id>
+  <author>
+    <name><![CDATA[eucalyptusja]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eucalyptus v1.6.2 がリリース]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2010/02/02/eucalyptus-v1-dot-6-2-release/"/>
+    <updated>2010-02-02T14:57:40+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2010/02/02/eucalyptus-v1-dot-6-2-release</id>
+    <content type="html"><![CDATA[<p>Eucalyptus v1.6.2 がリリースされました。コマンドラインツール、 Euca2ools 1.2 もリリースされてます。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Eucalyptus v1.6.2 RC1 がリリース]]></title>
+    <link href="http://eucalyptus-users.jp/blog/2009/09/30/eucalyptus-v1-dot-6-2-rc1-release/"/>
+    <updated>2009-09-30T13:45:17+09:00</updated>
+    <id>http://eucalyptus-users.jp/blog/2009/09/30/eucalyptus-v1-dot-6-2-rc1-release</id>
+    <content type="html"><![CDATA[<p>Eucalyptus v1.6.2 RC1 がリリースされました。同時にコマンドラインツールの最新版、 Euca2ools 1.2-RC1 もリリースされてます。</p>
+]]></content>
+  </entry>
+  
+</feed>
