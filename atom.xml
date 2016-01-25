@@ -2,18 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Eucalyptus Users Group Japan]]></title>
+<<<<<<< HEAD
   <link href="http://eucalyptus-users.jp/atom.xml" rel="self"/>
   <link href="http://eucalyptus-users.jp/"/>
   <updated>2015-12-02T20:44:20+09:00</updated>
   <id>http://eucalyptus-users.jp/</id>
   <author>
     <name><![CDATA[eucalyptusja]]></name>
+=======
+  <link href="http://eucalyptus-ja.github.io/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2014-08-13T02:35:55+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
+  <author>
+    <name><![CDATA[Eucalyptus Users Group Japan]]></name>
+>>>>>>> e062692188dfc7bbfac249e00fe16709b0e0fe30
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
+<<<<<<< HEAD
     <title type="html"><![CDATA[本家コミュニティの開発に参加するには？]]></title>
     <link href="http://eucalyptus-users.jp/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/"/>
     <updated>2015-12-02T12:08:24+09:00</updated>
@@ -3574,6 +3584,31 @@ $ ./stack.sh
 <p>覚えてないけど恐らく「ここ暗黒時代」とか言ってるに違いない。</p>
 
 <p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4177.jpg"></p>
+=======
+    <title type="html"><![CDATA[Eucalyptus 6th Birthday Party in Japan]]></title>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/08/12/eucalyptus-6th-birthday-party-in-japan/"/>
+    <updated>2014-08-12T21:07:24+09:00</updated>
+    <id>http://eucalyptus-ja.github.io/blog/2014/08/12/eucalyptus-6th-birthday-party-in-japan</id>
+    <content type="html"><![CDATA[<p>クリエーションライン株式会社様の協力を得て、去る 2014/05/30 に Eucalyptus の6歳の誕生日パーティを開催致しました。</p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4144.jpg"></p>
+
+<p>会場は既に準備が完了しており、CL社の好意によりテーブルの上には各種緑色の飲み物が。</p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4154.jpg"></p>
+
+<p>全員揃う前に乾杯の練習(n回目)</p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4155.jpg"></p>
+
+<p>完全に Eucalyptus の事を忘れて皆が関係ない話をしだした頃に、やっと本パーティのメインの出し物。</p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4162.jpg"></p>
+
+<p>覚えてないけど恐らく「ここ暗黒時代」とか言ってるに違いない。</p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4177.jpg"></p>
+>>>>>>> e062692188dfc7bbfac249e00fe16709b0e0fe30
 
 <p>酔った会長に本を無理矢理持たせて記念撮影。</p>
 
@@ -3581,6 +3616,7 @@ $ ./stack.sh
 ]]></content>
   </entry>
   
+<<<<<<< HEAD
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2012 JP をやります & やりましょう]]></title>
     <link href="http://eucalyptus-users.jp/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp/"/>
@@ -3780,4 +3816,6 @@ $ ./stack.sh
 ]]></content>
   </entry>
   
+=======
+>>>>>>> e062692188dfc7bbfac249e00fe16709b0e0fe30
 </feed>
