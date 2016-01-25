@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://eucalyptus-ja.github.io/sitemap.xml 
