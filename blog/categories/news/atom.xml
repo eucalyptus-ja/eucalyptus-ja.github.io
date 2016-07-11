@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: news | Eucalyptus Users Group Japan]]></title>
-  <link href="http://eucalyptus-users.jp/blog/categories/news/atom.xml" rel="self"/>
-  <link href="http://eucalyptus-users.jp/"/>
-  <updated>2015-12-02T20:44:20+09:00</updated>
-  <id>http://eucalyptus-users.jp/</id>
+  <link href="http://eucalyptus-ja.github.io/blog/categories/news/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2016-07-12T01:30:19+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
   <author>
     <name><![CDATA[eucalyptusja]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Japan Eucalyptus Advent Calendar 2015]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
     <updated>2015-11-10T00:50:26+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
     <content type="html"><![CDATA[<p>今年も Japan Eucalyptus Advent Calendar 2015 を以下に開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 
 <ul>
@@ -37,9 +37,9 @@
   
   <entry>
     <title type="html"><![CDATA[日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いています]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/"/>
     <updated>2014-12-01T08:00:09+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> 1日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -66,18 +66,18 @@
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2014]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
     <updated>2014-11-19T02:29:54+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
     <content type="html"><![CDATA[<p>今年も <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> を開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[HP 社が Eucalyptus 社を買収しました]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/09/12/hp-acquires-eucalyptus/"/>
     <updated>2014-09-12T02:24:36+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/09/12/hp-acquires-eucalyptus</id>
     <content type="html"><![CDATA[<p><a href="https://www.eucalyptus.com/news/hp-acquires-eucalyptus-accelerate-hybrid-cloud-adoption-enterprise">HP 社が Eucalyptus 社を買収した</a>そうです。おめでとうございます。</p>
 
 <p>今後ソフトウェアの Eucalyptus がどのようになるかについては当ユーザ会は知りませんが、今まで通り活動していきたいと存じます。</p>
@@ -86,9 +86,9 @@
   
   <entry>
     <title type="html"><![CDATA[JEUG's mascot]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/07/25/jeugs-mascot/"/>
     <updated>2012-07-25T19:34:36+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/07/25/jeugs-mascot</id>
     <content type="html"><![CDATA[<p>those koala and bird are mascot of JEUG.</p>
 
 <table>

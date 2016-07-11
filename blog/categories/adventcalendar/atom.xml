@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: adventcalendar | Eucalyptus Users Group Japan]]></title>
-  <link href="http://eucalyptus-users.jp/blog/categories/adventcalendar/atom.xml" rel="self"/>
-  <link href="http://eucalyptus-users.jp/"/>
-  <updated>2015-12-02T20:44:20+09:00</updated>
-  <id>http://eucalyptus-users.jp/</id>
+  <link href="http://eucalyptus-ja.github.io/blog/categories/adventcalendar/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2016-07-12T01:30:19+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
   <author>
     <name><![CDATA[eucalyptusja]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[本家コミュニティの開発に参加するには？]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/"/>
     <updated>2015-12-02T12:08:24+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/815">(2枚目) Japan Eucalyptus Advent Calendar 2015</a> 2日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -53,9 +53,9 @@
   
   <entry>
     <title type="html"><![CDATA[日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いていました]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/"/>
     <updated>2015-12-01T00:55:34+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/815">(2枚目) Japan Eucalyptus Advent Calendar 2015</a> 1日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -86,9 +86,9 @@
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus on Eucalyptus]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/23/eucalyptus-on-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/23/eucalyptus-on-eucalyptus/"/>
     <updated>2014-12-23T22:49:01+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/23/eucalyptus-on-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/23/eucalyptus-on-eucalyptus</id>
     <content type="html"><![CDATA[<p>Eucalyptus ユーザのみなさんこんにちは、これは <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> の23日目のエントリです。</p>
 
 <p>昨日のエントリは <a href="https://twitter.com/mayumik0">@MayumiK0</a> さんの連投エントリ「<a href="http://www.slideshare.net/samemoon/eucalyptus-calendar20141222">Eucalyptusの効能</a>」でした。一見するとネタ投稿のように見えますが、ネタだけでなく技術的なこともバッチリ書かれてて、さすが <a href="https://twitter.com/mayumik0">@MayumiK0</a> さんです。</p>
@@ -1633,9 +1633,9 @@ Ran sysctl -p returned 255
   
   <entry>
     <title type="html"><![CDATA[Wakame-VDC on Eucalyptus]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/17/wakame-vdc-on-eucalyptus/"/>
     <updated>2014-12-17T00:26:53+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/17/wakame-vdc-on-eucalyptus</id>
     <content type="html"><![CDATA[<p>Wakame ユーザの皆さんこんにちは、日本 Eucalyptus ユーザ会です。これは「<a href="http://www.adventar.org/calendars/577">Wakame-vdc / OpenVNet Advent Calendar 2014</a>」の17日目のエントリです。</p>
 
 <p>ちなみに昨日は <a href="https://twitter.com/hansode">@hansode</a> さんのエントリ「<a href="http://blog.hansode.org/archives/52680175.html">#WakameVdc / #OpenVNet 開発環境の改善履歴</a>」でした。@hansode さんのエントリを読んでると自分も同じような環境を作りたくなってウズウズしてくるので、皆さんも是非読んでみてください。</p>
@@ -1762,9 +1762,9 @@ D, [2014-12-16T14:55:31.955609 #13376] DEBUG -- ServiceNetfilter: vnic not found
   
   <entry>
     <title type="html"><![CDATA[CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/10/cloudstack-advent-calendar-10th/"/>
     <updated>2014-12-10T01:56:58+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/10/cloudstack-advent-calendar-10th</id>
     <content type="html"><![CDATA[<p>CloudStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
 
 <p>これは CloudStack Advent Calendar 2014 の10日目のエントリです。</p>

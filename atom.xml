@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Eucalyptus Users Group Japan]]></title>
-  <link href="http://eucalyptus-users.jp/atom.xml" rel="self"/>
-  <link href="http://eucalyptus-users.jp/"/>
-  <updated>2015-12-02T20:44:20+09:00</updated>
-  <id>http://eucalyptus-users.jp/</id>
+  <link href="http://eucalyptus-ja.github.io/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2016-07-12T01:30:19+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
   <author>
     <name><![CDATA[eucalyptusja]]></name>
     
@@ -14,10 +14,75 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Eucalyptus インストール事例 〜株式会社 Empire 様の場合〜]]></title>
+    <link href="http://eucalyptus-ja.github.io/blog/2016/07/07/flowers-for-empire/"/>
+    <updated>2016-07-07T00:33:24+09:00</updated>
+    <id>http://eucalyptus-ja.github.io/blog/2016/07/07/flowers-for-empire</id>
+    <content type="html"><![CDATA[<p>全国1億2千万人の Eucalyptus ユーザの皆様、こんにちは。</p>
+
+<p>最近は当サイトの更新も滞り、巷ではもはや名前すら話題にあがってない、などというニセ情報が出回ってますが、どっこい元気に活動しています。</p>
+
+<p>さて、本日は企業での Eucalyptus の導入事例を紹介したいと思います。</p>
+
+<!-- more -->
+
+
+<p>本日お邪魔するのは、株式会社 Empire 様。聴くところによると本日オフィスを移転したらしいのですが、社員がほぼ総出で OpenStack Days Tokyo 2016 に参加しているということで、業者を装って勝手に移転祝いがてら社員の PC に Eucalyptus をインストールしてあげようと思います。</p>
+
+<p>そう、聡明な皆さんはお気付きかもしれませんが、導入事例は報告を待つのではなく、自ら作りあげていくものだということをユーザ会設立7年目にして気付きました。</p>
+
+<p>きっと社員の方々も「わぁー！なにこれー！オフィス移転したら PC に Eucalyptus がインストールされてて超ハッピー ✌(́◓q◔`)✌」なんてちょっぴり年代がバレそうな喜びかたをするに違いありません。</p>
+
+<p>ってことで、さっそくお邪魔しま〜す ヽʕ♡˙ᴥ˙♡ʔノ</p>
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<p>あれ？ PC がありません…。PC が無いというか、何もまだ搬入されてません…。</p>
+
+<p>ま、まさか潜入するのが早すぎた…のか…？</p>
+
+<p>う…うぅむ…このままだと「何の成果も得られませんでしたぁぁ！！」というベタな報告をするハメになりそうですが、それだけは何としても阻止しなければなりません。この「勝手に導入事例を作るシリーズ」の今後にもかかわってくる重要な回をどんなことをしても成功させたい、成功しなければならない！！</p>
+
+<p><br />
+<br />
+<br /></p>
+
+<p>ということで、「Eucalyptus は Eucalyptus。なんでもいいからインストールしてしまえ！」と株式会社 Empire 様の新オフィスに無理矢理 Eucalyptus を導入してみました！！！</p>
+
+<p><br /></p>
+
+<p><img src="http://eucalyptus-ja.github.io/images/20160707.jeug-3.jpg"></p>
+
+<p>テンションあがりすぎて、うっかり「日本ユーカリプタスユーザ会 一同」って名前を書いてしまいました…。</p>
+
+<p>なにはともあれ、株式会社 Empire 様、新オフィスおめでとうございます。</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[本家コミュニティの開発に参加するには？]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2/"/>
     <updated>2015-12-02T12:08:24+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/12/02/japan-eucalyptus-advent-calendar-2015-day-2</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/815">(2枚目) Japan Eucalyptus Advent Calendar 2015</a> 2日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -53,9 +118,9 @@
   
   <entry>
     <title type="html"><![CDATA[日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いていました]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1/"/>
     <updated>2015-12-01T00:55:34+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/12/01/japan-eucalyptus-advent-calendar-2015-day-1</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/815">(2枚目) Japan Eucalyptus Advent Calendar 2015</a> 1日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -86,9 +151,9 @@
   
   <entry>
     <title type="html"><![CDATA[Japan Eucalyptus Advent Calendar 2015]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
     <updated>2015-11-10T00:50:26+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
     <content type="html"><![CDATA[<p>今年も Japan Eucalyptus Advent Calendar 2015 を以下に開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 
 <ul>
@@ -108,9 +173,9 @@
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus on Eucalyptus]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/23/eucalyptus-on-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/23/eucalyptus-on-eucalyptus/"/>
     <updated>2014-12-23T22:49:01+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/23/eucalyptus-on-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/23/eucalyptus-on-eucalyptus</id>
     <content type="html"><![CDATA[<p>Eucalyptus ユーザのみなさんこんにちは、これは <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> の23日目のエントリです。</p>
 
 <p>昨日のエントリは <a href="https://twitter.com/mayumik0">@MayumiK0</a> さんの連投エントリ「<a href="http://www.slideshare.net/samemoon/eucalyptus-calendar20141222">Eucalyptusの効能</a>」でした。一見するとネタ投稿のように見えますが、ネタだけでなく技術的なこともバッチリ書かれてて、さすが <a href="https://twitter.com/mayumik0">@MayumiK0</a> さんです。</p>
@@ -135,7 +200,7 @@ INSTANCETYPE    m2.2xlarge     2          4096          30
 
 <p>というスペックです。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/eucalyptus.adventcalendar.2014.1223-01.png"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/eucalyptus.adventcalendar.2014.1223-01.png"></p>
 
 <p>で、<a href="https://www.eucalyptus.com/eucalyptus-cloud/get-started">faststart のページ</a> を見るといつの間にか「CentOS 6.6 で叩けよな」って書いてあります。そんな馬鹿な…いつの間にそんなことに…。まーどうせ失敗する流れなので CentOS 6.5 のまま実行します。</p>
 
@@ -3121,7 +3186,7 @@ INSTANCETYPE    m2.2xlarge     2          4096          30
 
 <p>ちなみに他の人も書いてるようにセットアップ中は以下のようなコーヒーのアスキーアートがウネウネと動いているんですが、ぶっちゃけると「そんなとこ頑張るより『現在 n/M です』とかって進捗率を表示しろよ」と叫びたくなりますね。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/eucalyptus.adventcalendar.2014.1223-02.png"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/eucalyptus.adventcalendar.2014.1223-02.png"></p>
 
 <p>ということで、Eucalyptus on Eucalyptus もメデタク失敗したところで、本エントリは終了します。</p>
 ]]></content>
@@ -3129,9 +3194,9 @@ INSTANCETYPE    m2.2xlarge     2          4096          30
   
   <entry>
     <title type="html"><![CDATA[Wakame-VDC on Eucalyptus]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/17/wakame-vdc-on-eucalyptus/"/>
     <updated>2014-12-17T00:26:53+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/17/wakame-vdc-on-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/17/wakame-vdc-on-eucalyptus</id>
     <content type="html"><![CDATA[<p>Wakame ユーザの皆さんこんにちは、日本 Eucalyptus ユーザ会です。これは「<a href="http://www.adventar.org/calendars/577">Wakame-vdc / OpenVNet Advent Calendar 2014</a>」の17日目のエントリです。</p>
 
 <p>ちなみに昨日は <a href="https://twitter.com/hansode">@hansode</a> さんのエントリ「<a href="http://blog.hansode.org/archives/52680175.html">#WakameVdc / #OpenVNet 開発環境の改善履歴</a>」でした。@hansode さんのエントリを読んでると自分も同じような環境を作りたくなってウズウズしてくるので、皆さんも是非読んでみてください。</p>
@@ -3145,7 +3210,7 @@ INSTANCETYPE    m2.2xlarge     2          4096          30
 
 <p>で、使用した Eucalyptus のマシンイメージは Eucalyptus 本家が配布している CentOS 6.5 のマシンイメージを使用します。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/wakame.adventcalendar.2014.1217-01.png"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/wakame.adventcalendar.2014.1217-01.png"></p>
 
 <p>こんな感じで起動したインスタンスに接続し、Wakame-VDC をインストールするために必要なリポジトリ情報を登録して必要なパッケージ類をインストールします。</p>
 
@@ -3195,13 +3260,13 @@ sudo start vdc-webui
 
 <p>で、インスタンスの 9000 番ポートに接続します。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/wakame.adventcalendar.2014.1217-02.png"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/wakame.adventcalendar.2014.1217-02.png"></p>
 
 <p>おぉっ！エクセレンッ！！！</p>
 
 <p>では、あっさりと動いた Wakame-VDC に敬意を表してインスタンスを起動してみます。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/wakame.adventcalendar.2014.1217-03.png"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/wakame.adventcalendar.2014.1217-03.png"></p>
 
 <p>よしきた terminated。見事にインスタンス起動失敗。そーこなくちゃ。</p>
 
@@ -3258,9 +3323,9 @@ D, [2014-12-16T14:55:31.955609 #13376] DEBUG -- ServiceNetfilter: vnic not found
   
   <entry>
     <title type="html"><![CDATA[CloudStack on Eucalyptus / CloudStack Advent Calendar 2014 10日目]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/10/cloudstack-advent-calendar-10th/"/>
     <updated>2014-12-10T01:56:58+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/10/cloudstack-advent-calendar-10th</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/10/cloudstack-advent-calendar-10th</id>
     <content type="html"><![CDATA[<p>CloudStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
 
 <p>これは CloudStack Advent Calendar 2014 の10日目のエントリです。</p>
@@ -3274,7 +3339,7 @@ D, [2014-12-16T14:55:31.955609 #13376] DEBUG -- ServiceNetfilter: vnic not found
 
 <p>ということで、早速 Eucalyptus の上に CloudStack を乗せてみました。(ドヤァ</p>
 
-<p><img src="http://eucalyptus-users.jp/images/cloudstack.advent.calendar.2014.1210-01.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/cloudstack.advent.calendar.2014.1210-01.jpg"></p>
 
 <p>…すみません、ぷたさんから「そのネタ、誰も笑ってないよ」って冷静に言われちゃいました。あと、す〜さんからも「大削会長の本を前編しか買ってないのバレるよ？」って…。本当にごめんなさい。</p>
 
@@ -3416,9 +3481,9 @@ CloudStack has successfully initialized database, you can check your database co
   
   <entry>
     <title type="html"><![CDATA[OpenStack on Eucalyptus / OpenStack Advent Calendar 2014 3日目]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03/"/>
     <updated>2014-12-03T08:56:45+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/03/openstack-on-eucalyptus-slash-openstack-advent-calendar-2014-dot-12-dot-03</id>
     <content type="html"><![CDATA[<p>OpenStacker の皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
 
 <p>これは OpenStack Advent Calendar 2014 の3日目のエントリです。昨日は @coprolite さんのエントリ「<a href="http://isana.me/?p=1641">初めてのOpenStack</a>」というエントリでした。正直、初めてのかたでも気軽に参加してくれる OpenStack Advent Calendar が羨ましいです。もちろん当ユーザ会が主催する <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> も初めてのかた大歓迎です。そして当ユーザ会が他のユーザ会の Advent Calendar に参加するという試みも初めてです。うん、初々しいですね。</p>
@@ -3442,7 +3507,7 @@ CloudStack has successfully initialized database, you can check your database co
 
 <p>ということで、早速 Eucalyptus の上に OpenStack を乗せてみました。(ドヤァ</p>
 
-<p><img src="http://eucalyptus-users.jp/images/openstack.adventcalendar.2014.1203-01.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/openstack.adventcalendar.2014.1203-01.jpg"></p>
 
 <p>…すみません、ぷたさんから「そんな OpenStacker を怒らせるようなネタするな」ってツッコまれました。ちゃんとやります。</p>
 
@@ -3500,9 +3565,9 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[日本 Eucalyptus ユーザ会は HP Helion Public Cloud で動いています]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud/"/>
     <updated>2014-12-01T08:00:09+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/12/01/jeug-is-powered-by-hp-helion-public-cloud</id>
     <content type="html"><![CDATA[<p>これは <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> 1日目の投稿です。</p>
 
 <p>皆さんこんにちは、日本 Eucalyptus ユーザ会です。</p>
@@ -3529,18 +3594,18 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2014]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
     <updated>2014-11-19T02:29:54+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
     <content type="html"><![CDATA[<p>今年も <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> を開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[HP 社が Eucalyptus 社を買収しました]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/09/12/hp-acquires-eucalyptus/"/>
     <updated>2014-09-12T02:24:36+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/09/12/hp-acquires-eucalyptus</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/09/12/hp-acquires-eucalyptus</id>
     <content type="html"><![CDATA[<p><a href="https://www.eucalyptus.com/news/hp-acquires-eucalyptus-accelerate-hybrid-cloud-adoption-enterprise">HP 社が Eucalyptus 社を買収した</a>そうです。おめでとうございます。</p>
 
 <p>今後ソフトウェアの Eucalyptus がどのようになるかについては当ユーザ会は知りませんが、今まで通り活動していきたいと存じます。</p>
@@ -3549,31 +3614,31 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus 6th Birthday partiy in Japan]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan/"/>
     <updated>2014-06-01T11:10:38+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan</id>
     <content type="html"><![CDATA[<p>クリエーションライン株式会社様の協力を得て、去る 2014/05/30 に Eucalyptus の6歳の誕生日パーティを開催致しました。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4144.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4144.jpg"></p>
 
 <!-- more -->
 
 
 <p>会場は既に準備が完了しており、CL社の好意によりテーブルの上には各種緑色の飲み物が。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4154.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4154.jpg"></p>
 
 <p>全員揃う前に乾杯の練習(n回目)</p>
 
-<p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4155.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4155.jpg"></p>
 
 <p>完全に Eucalyptus の事を忘れて皆が関係ない話をしだした頃に、やっと本パーティのメインの出し物。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4162.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4162.jpg"></p>
 
 <p>覚えてないけど恐らく「ここ暗黒時代」とか言ってるに違いない。</p>
 
-<p><img src="http://eucalyptus-users.jp/images/20140530.DSC_4177.jpg"></p>
+<p><img src="http://eucalyptus-ja.github.io/images/20140530.DSC_4177.jpg"></p>
 
 <p>酔った会長に本を無理矢理持たせて記念撮影。</p>
 
@@ -3583,18 +3648,18 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2012 JP をやります & やりましょう]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp/"/>
     <updated>2012-11-23T20:30:04+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp</id>
     <content type="html"><![CDATA[<p>12/1 から 12/25 にかけて 1 日 1 ネタ──Eucalyptus に関することなら何でも──ブログなどに書き綴ってみませんか？興味があるかたはこちら(<a href="http://atnd.org/events/34311">Eucalyptus Advent Calendar 2012 JP</a>)を見てください。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[OSC 2012 Tokyo/Fall の報告]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/09/12/osc-2012-tokyo-slash-fall/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/09/12/osc-2012-tokyo-slash-fall/"/>
     <updated>2012-09-12T20:27:46+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/09/12/osc-2012-tokyo-slash-fall</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/09/12/osc-2012-tokyo-slash-fall</id>
     <content type="html"><![CDATA[<p>去る 2012/09/08 に開催されました OSC 2012 Tokyo/Fall の2日目、オープンクラウドキャンパスのセッションで以下2名がEucalyptusに関係する発表を行ないました。</p>
 
 <ul>
@@ -3607,9 +3672,9 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[JEUG's mascot]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/07/25/jeugs-mascot/"/>
     <updated>2012-07-25T19:34:36+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/07/25/jeugs-mascot</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/07/25/jeugs-mascot</id>
     <content type="html"><![CDATA[<p>those koala and bird are mascot of JEUG.</p>
 
 <table>
@@ -3622,14 +3687,14 @@ $ ./stack.sh
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/IMG_0308.jpg" width="150" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_pc.001.png" width="200" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su.002.png" width="200" height="198"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/IMG_0308.jpg" width="150" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_pc.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su.002.png" width="200" height="198"></td>
 </tr>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su.004.png" width="200" height="198"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su_mole.dig_.001.png" width="200" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su_storage.001.png" width="200" height="168"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su.004.png" width="200" height="198"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su_mole.dig_.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su_storage.001.png" width="200" height="168"></td>
 </tr>
 </tbody>
 </table>
@@ -3639,9 +3704,9 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[ぷた と す～]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/07/24/20120724-puta-and-su/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/07/24/20120724-puta-and-su/"/>
     <updated>2012-07-24T19:34:36+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/07/24/20120724-puta-and-su</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/07/24/20120724-puta-and-su</id>
     <content type="html"><![CDATA[<p>日本 Eucalyptus ユーザ会のマスコットキャラクタ。適宜追加していく予定です。</p>
 
 <table>
@@ -3654,14 +3719,14 @@ $ ./stack.sh
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/IMG_0308.jpg" width="150" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_pc.001.png" width="200" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su.002.png" width="200" height="198"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/IMG_0308.jpg" width="150" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_pc.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su.002.png" width="200" height="198"></td>
 </tr>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su.004.png" width="200" height="198"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su_mole.dig_.001.png" width="200" height="200"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/puta_su_storage.001.png" width="200" height="168"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su.004.png" width="200" height="198"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su_mole.dig_.001.png" width="200" height="200"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/puta_su_storage.001.png" width="200" height="168"></td>
 </tr>
 </tbody>
 </table>
@@ -3671,9 +3736,9 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[スライドのテンプレートを公開します]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/05/28/20120528-slide-templete/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/05/28/20120528-slide-templete/"/>
     <updated>2012-05-28T19:18:49+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/05/28/20120528-slide-templete</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/05/28/20120528-slide-templete</id>
     <content type="html"><![CDATA[<p>「Eucalyptusネタの発表をしたい」という方へ (もちろん、そうじゃない方も)</p>
 
 <p>PowerPointのテンプレートを公開します。</p>
@@ -3693,14 +3758,14 @@ $ ./stack.sh
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG001.png"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG002.png"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG003.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG001.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG002.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG003.png"></td>
 </tr>
 <tr>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG011.png"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG012.png"></td>
-<td style="text-align:center;"><img src="http://eucalyptus-users.jp/images/JEUG013.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG011.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG012.png"></td>
+<td style="text-align:center;"><img src="http://eucalyptus-ja.github.io/images/JEUG013.png"></td>
 </tr>
 </tbody>
 </table>
@@ -3710,8 +3775,8 @@ $ ./stack.sh
 <li>テンプレートのファイル
 
 <ul>
-<li><a href="http://eucalyptus-users.jp/downloads/JEUG00.pot">JEUG00 黒板系の背景 (Office 2003 以前用の pot 形式)</a></li>
-<li><a href="http://eucalyptus-users.jp/downloads/JEUG01.potx">JEUG01 肌色系の背景 (Office 2007 以降用の potx 形式)</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/JEUG00.pot">JEUG00 黒板系の背景 (Office 2003 以前用の pot 形式)</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/JEUG01.potx">JEUG01 肌色系の背景 (Office 2007 以降用の potx 形式)</a></li>
 </ul>
 </li>
 </ul>
@@ -3721,27 +3786,27 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[コミュニティサイトをリニューアルしました]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/02/08/20120208-site-renewal/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/02/08/20120208-site-renewal/"/>
     <updated>2012-02-08T19:16:35+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/02/08/20120208-site-renewal</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/02/08/20120208-site-renewal</id>
     <content type="html"><![CDATA[<p>コミュニティサイトをリニューアルしました。活動内容やドキュメントを積極的に公開予定です。今後ともどうぞ宜しくお願い致します。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[オープンソースカンファレンス2010 Tokyo/Fall にブース出展＆セミナー講演]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2010/09/10/osc-2010-tokyo-slash-fall/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2010/09/10/osc-2010-tokyo-slash-fall/"/>
     <updated>2010-09-10T19:08:50+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2010/09/10/osc-2010-tokyo-slash-fall</id>
+    <id>http://eucalyptus-ja.github.io/blog/2010/09/10/osc-2010-tokyo-slash-fall</id>
     <content type="html"><![CDATA[<p>2010/09/10(金)・11(土) <a href="http://www.ospn.jp/osc2010-fall/">オープンソースカンファレンス2010 Tokyo/Fall</a> にブース出展＆セミナー講演を行いました。 ご来場およびブースにお立ち寄りのの皆さま、誠にありがとうございました！ 発表者の岡本さん中井さん、羽深さん、お疲れさまでした！</p>
 
 <p>セミナー資料公開しました！</p>
 
 <ul>
-<li><a href="http://eucalyptus-users.jp/downloads/OSCTokyo2010Fall_publish.pdf">クラウドを使う時代から作る時代へ ～これがEucalyptusだ！！～ (JEUG 岡本さん) pdf</a></li>
-<li><a href="http://eucalyptus-users.jp/downloads/OSC-2010-TokyoFall.habuka036.pdf">Eucalyptus 2.0 はじめました！ (JEUG 羽深さん) pdf</a></li>
-<li><a href="http://eucalyptus-users.jp/downloads/IBM_Eucalyptus_OSC_TokyoFall2010.pdf">Eucalyptus 60分クッキング (JEUG 中井さん) pdf</a></li>
-<li><a href="http://eucalyptus-users.jp/downloads/OpenCloudCampus-Tokyo2010Fall.pdf">オープンクラウドキャンパスのご紹介 (JEUG 肝付さん) pdf</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/OSCTokyo2010Fall_publish.pdf">クラウドを使う時代から作る時代へ ～これがEucalyptusだ！！～ (JEUG 岡本さん) pdf</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/OSC-2010-TokyoFall.habuka036.pdf">Eucalyptus 2.0 はじめました！ (JEUG 羽深さん) pdf</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/IBM_Eucalyptus_OSC_TokyoFall2010.pdf">Eucalyptus 60分クッキング (JEUG 中井さん) pdf</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/OpenCloudCampus-Tokyo2010Fall.pdf">オープンクラウドキャンパスのご紹介 (JEUG 肝付さん) pdf</a></li>
 </ul>
 
 ]]></content>
@@ -3749,32 +3814,15 @@ $ ./stack.sh
   
   <entry>
     <title type="html"><![CDATA[オープンソースカンファレンス2010 Nagoya に参加]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2010/08/07/osc-2010-nagoya/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2010/08/07/osc-2010-nagoya/"/>
     <updated>2010-08-07T19:04:55+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2010/08/07/osc-2010-nagoya</id>
+    <id>http://eucalyptus-ja.github.io/blog/2010/08/07/osc-2010-nagoya</id>
     <content type="html"><![CDATA[<p>2010/08/07(土) <a href="http://www.ospn.jp/osc2010-nagoya/">オープンソースカンファレンス2010 Nagoya</a> に参加しました！ 発表者の岡本さん中井さん、羽深さん、ご来場の皆さま誠にありがとうございました！</p>
 
 <p>セミナー資料公開しました</p>
 
 <ul>
-<li><a href="http://eucalyptus-users.jp/downloads/IBM_Eucalyptus_OSC_Nagoya2010.pdf">Eucalyptus 60分クッキング (JEUG 中井さん) pdf</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[オープンソースカンファレンス2010 Kansai@kyoto に参加]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2010/07/09/osc-2010-kansai-at-kyoto/"/>
-    <updated>2010-07-09T18:47:08+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2010/07/09/osc-2010-kansai-at-kyoto</id>
-    <content type="html"><![CDATA[<p>2010/07/09(金)・10(土) <a href="http://www.ospn.jp/osc2010-kyoto/">オープンソースカンファレンス2010 Kansai@kyoto</a> に参加しました！ ブース出展およびセミナー行いました。セミナーは、ミニセッション方式です。多数の方にお越しいただき、ありがとうございました！</p>
-
-<p>セミナー資料公開しました</p>
-
-<ul>
-<li><a href="http://eucalyptus-users.jp/downloads/MakingCloud_OSCKyoto2010.pdf">クラウドを使う時代から作る時代へ ～これがEucalyptusだ！！～ (JEUG 岡本さん) pdf</a></li>
-<li><a href="http://eucalyptus-users.jp/downloads/IBM_Eucalyptus_OSC_Kyoto2010.pdf">Eucalyptus 60分クッキング (JEUG 中井さん) pdf</a></li>
+<li><a href="http://eucalyptus-ja.github.io/downloads/IBM_Eucalyptus_OSC_Nagoya2010.pdf">Eucalyptus 60分クッキング (JEUG 中井さん) pdf</a></li>
 </ul>
 
 ]]></content>

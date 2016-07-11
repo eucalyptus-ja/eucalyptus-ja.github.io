@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: event | Eucalyptus Users Group Japan]]></title>
-  <link href="http://eucalyptus-users.jp/blog/categories/event/atom.xml" rel="self"/>
-  <link href="http://eucalyptus-users.jp/"/>
-  <updated>2015-12-02T20:44:20+09:00</updated>
-  <id>http://eucalyptus-users.jp/</id>
+  <link href="http://eucalyptus-ja.github.io/blog/categories/event/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2016-07-12T01:30:19+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
   <author>
     <name><![CDATA[eucalyptusja]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Japan Eucalyptus Advent Calendar 2015]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015/"/>
     <updated>2015-11-10T00:50:26+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
+    <id>http://eucalyptus-ja.github.io/blog/2015/11/10/japan-eucalyptus-advent-calendar-2015</id>
     <content type="html"><![CDATA[<p>今年も Japan Eucalyptus Advent Calendar 2015 を以下に開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 
 <ul>
@@ -37,18 +37,18 @@
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2014]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014/"/>
     <updated>2014-11-19T02:29:54+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/11/19/eucalyptus-advent-calendar-2014</id>
     <content type="html"><![CDATA[<p>今年も <a href="http://www.adventar.org/calendars/547">Eucalyptus Advent Calendar 2014</a> を開催します。今年は去年より賑わう予感がするので、皆さん奮ってご参加ください。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus 6th Birthday partiy in Japan]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan/"/>
     <updated>2014-06-01T11:10:38+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan</id>
+    <id>http://eucalyptus-ja.github.io/blog/2014/06/01/eucalyptus-6th-birthday-partiy-in-japan</id>
     <content type="html"><![CDATA[<p>クリエーションライン株式会社様の協力を得て、去る 2014/05/30 に Eucalyptus の6歳の誕生日パーティを開催致しました。</p>
 
 <p><img src="/images/20140530.DSC_4144.jpg"></p>
@@ -80,18 +80,18 @@
   
   <entry>
     <title type="html"><![CDATA[Eucalyptus Advent Calendar 2012 JP をやります & やりましょう]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp/"/>
     <updated>2012-11-23T20:30:04+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/11/23/eucalyptus-advent-calendar-2012-jp</id>
     <content type="html"><![CDATA[<p>12/1 から 12/25 にかけて 1 日 1 ネタ──Eucalyptus に関することなら何でも──ブログなどに書き綴ってみませんか？興味があるかたはこちら(<a href="http://atnd.org/events/34311">Eucalyptus Advent Calendar 2012 JP</a>)を見てください。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[OSC 2012 Tokyo/Fall の報告]]></title>
-    <link href="http://eucalyptus-users.jp/blog/2012/09/12/osc-2012-tokyo-slash-fall/"/>
+    <link href="http://eucalyptus-ja.github.io/blog/2012/09/12/osc-2012-tokyo-slash-fall/"/>
     <updated>2012-09-12T20:27:46+09:00</updated>
-    <id>http://eucalyptus-users.jp/blog/2012/09/12/osc-2012-tokyo-slash-fall</id>
+    <id>http://eucalyptus-ja.github.io/blog/2012/09/12/osc-2012-tokyo-slash-fall</id>
     <content type="html"><![CDATA[<p>去る 2012/09/08 に開催されました OSC 2012 Tokyo/Fall の2日目、オープンクラウドキャンパスのセッションで以下2名がEucalyptusに関係する発表を行ないました。</p>
 
 <ul>

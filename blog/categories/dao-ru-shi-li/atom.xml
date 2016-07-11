@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 導入事例 | Eucalyptus Users Group Japan]]></title>
+  <link href="http://eucalyptus-ja.github.io/blog/categories/dao-ru-shi-li/atom.xml" rel="self"/>
+  <link href="http://eucalyptus-ja.github.io/"/>
+  <updated>2016-07-12T01:30:19+09:00</updated>
+  <id>http://eucalyptus-ja.github.io/</id>
+  <author>
+    <name><![CDATA[eucalyptusja]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eucalyptus インストール事例 〜株式会社 Empire 様の場合〜]]></title>
+    <link href="http://eucalyptus-ja.github.io/blog/2016/07/07/flowers-for-empire/"/>
+    <updated>2016-07-07T00:33:24+09:00</updated>
+    <id>http://eucalyptus-ja.github.io/blog/2016/07/07/flowers-for-empire</id>
+    <content type="html"><![CDATA[<p>全国1億2千万人の Eucalyptus ユーザの皆様、こんにちは。</p>
+
+<p>最近は当サイトの更新も滞り、巷ではもはや名前すら話題にあがってない、などというニセ情報が出回ってますが、どっこい元気に活動しています。</p>
+
+<p>さて、本日は企業での Eucalyptus の導入事例を紹介したいと思います。</p>
+
+<!-- more -->
+
+
+<p>本日お邪魔するのは、株式会社 Empire 様。聴くところによると本日オフィスを移転したらしいのですが、社員がほぼ総出で OpenStack Days Tokyo 2016 に参加しているということで、業者を装って勝手に移転祝いがてら社員の PC に Eucalyptus をインストールしてあげようと思います。</p>
+
+<p>そう、聡明な皆さんはお気付きかもしれませんが、導入事例は報告を待つのではなく、自ら作りあげていくものだということをユーザ会設立7年目にして気付きました。</p>
+
+<p>きっと社員の方々も「わぁー！なにこれー！オフィス移転したら PC に Eucalyptus がインストールされてて超ハッピー ✌(́◓q◔`)✌」なんてちょっぴり年代がバレそうな喜びかたをするに違いありません。</p>
+
+<p>ってことで、さっそくお邪魔しま〜す ヽʕ♡˙ᴥ˙♡ʔノ</p>
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<div style="text-align: center;">・  </div>
+
+
+<p>あれ？ PC がありません…。PC が無いというか、何もまだ搬入されてません…。</p>
+
+<p>ま、まさか潜入するのが早すぎた…のか…？</p>
+
+<p>う…うぅむ…このままだと「何の成果も得られませんでしたぁぁ！！」というベタな報告をするハメになりそうですが、それだけは何としても阻止しなければなりません。この「勝手に導入事例を作るシリーズ」の今後にもかかわってくる重要な回をどんなことをしても成功させたい、成功しなければならない！！</p>
+
+<p><br />
+<br />
+<br /></p>
+
+<p>ということで、「Eucalyptus は Eucalyptus。なんでもいいからインストールしてしまえ！」と株式会社 Empire 様の新オフィスに無理矢理 Eucalyptus を導入してみました！！！</p>
+
+<p><br /></p>
+
+<p><img src="/images/20160707.jeug-3.jpg"></p>
+
+<p>テンションあがりすぎて、うっかり「日本ユーカリプタスユーザ会 一同」って名前を書いてしまいました…。</p>
+
+<p>なにはともあれ、株式会社 Empire 様、新オフィスおめでとうございます。</p>
+]]></content>
+  </entry>
+  
+</feed>
